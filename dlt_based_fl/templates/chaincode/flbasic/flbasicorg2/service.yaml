@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "flbasicorg2.fullname" . }}
+  namespace: {{ .Release.Namespace | quote }}
+  labels:
+    {{- include "flbasicorg2.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.flbasicorg2.service.type }}
+  ports:
+    - port: {{ .Values.flbasicorg2.service.port }}
+      targetPort: {{ .Values.flbasicorg2.service.targetPort }}
+      protocol: {{ .Values.flbasicorg2.service.protocol }}
+      {{- if and (or (eq .Values.flbasicorg2.service.type "NodePort") (eq .Values.flbasicorg2.service.type "LoadBalancer")) (not (empty .Values.flbasicorg2.service.nodePort)) }}
+      nodePort: {{ .Values.flbasicorg2.service.nodePort }}
+      {{ end }}
+  selector:
+    {{- include "flbasicorg2.selectorLabels" . | nindent 4 }}
