@@ -19,7 +19,7 @@ enablerNodeSelector:
 Replace vm2 with your node name.
 #### For quick installation use the name fl (recommended)
 ```
-cd hlf-helm
+cd dlt_based_fl
 helm install fl .
 ```
 To uninstall:
