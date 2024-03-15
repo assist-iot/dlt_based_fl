@@ -1,6 +1,6 @@
 apiVersion: v2
 name: dltfl
-description: A Helm chart for Kubernetes
+description: ASSIST-IoT DLT-based FL enabler
 
 # A chart can be either an 'application' or a 'library' chart.
 #

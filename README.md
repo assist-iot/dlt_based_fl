@@ -59,7 +59,7 @@ Important note, you need to deploy the pod inside the same node, so in dltinspec
   nodeSelector:
     kubernetes.io/hostname: name_of_the_node
 ```
-Inside the hlf-helm fodler:
+Inside the dlt_based_fl fodler:
 ```
 kubectl apply -f dltinspectionpod.yaml
 kubectl exec -it inspect /bin/sh
@@ -70,7 +70,7 @@ rm -r data
 exit
 ```
 It returns resource is busy, but it gets cleaned.
-Back to the hlf-helm fodler:
+Back to the dlt_based_fl fodler:
 ```
 kubectl delete pod inspect
 ```

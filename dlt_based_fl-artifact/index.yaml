@@ -3,12 +3,12 @@ entries:
   dltfl:
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2024-02-08T16:32:50.1904951+02:00"
-    description: A Helm chart for Kubernetes
-    digest: b6c3caf2fc96e50d646d373a012d36750aff6ee92859711dd597f22db3610bf6
+    created: "2024-03-15T15:22:49.677753324+02:00"
+    description: ASSIST-IoT DLT-based FL enabler
+    digest: fd976361eab9244cf8972856602e4c27f7c507352ab256da2d7d0bb9e50c41c5
     name: dltfl
     type: application
     urls:
     - dltfl-0.2.0.tgz
     version: 0.2.0
-generated: "2024-02-08T16:32:50.187680289+02:00"
+generated: "2024-03-15T15:22:49.675148873+02:00"
